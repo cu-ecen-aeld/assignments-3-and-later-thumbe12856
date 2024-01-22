@@ -16,6 +16,8 @@ logfile=test.sh.log
 # Place stdout and stderr in a log file
 exec > >(tee -i -a "$logfile") 2> >(tee -i -a "$logfile" >&2)
 
+sed -i 's/#include <stdlib.h>/#include <stdlib.h>\n#include <string.h>/' assignment-autotest/test/assignment1/username-from-conf-file.h
+
 echo "Running test with user $(whoami)"
 
 set +e
