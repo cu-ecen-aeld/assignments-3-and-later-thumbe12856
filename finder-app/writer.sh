@@ -1,3 +1,5 @@
+#!/bin/sh
+
 file_path=$1
 content=$2
 
