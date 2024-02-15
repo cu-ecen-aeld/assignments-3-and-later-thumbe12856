@@ -1,7 +1,7 @@
 EXECUTABLE_NAME = aesdsocket
 CROSS_COMPILE = 0
 
-CC = gcc
+CC ?= gcc
 C_STANDARD = gnu99
 CFLAGS = -g -Wall -Werror
 LDFLAGS = -lpthread -pthread
